@@ -3,7 +3,7 @@ import axios from 'axios'
 export function request(config) {
   //1.创建axios对象实例
     const instance = axios.create({
-      baseURL:'http://152.136.185.210:8000/api/n3',
+      baseURL:'http://152.136.185.210:8000/api/',
       timeout: 5000
     })
   // axios的拦截器，拦截哪个就use哪个,有两个参数，一个表示成功的函数，这个函数的参数就是instance的参数，一个失败的函数
